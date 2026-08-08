@@ -19,9 +19,7 @@ export const ptBR = {
     resume: 'Baixar currículo (EN)',
     nav: [
       { id: 'home', label: 'Início' },
-      { id: 'impact', label: 'Impacto' },
-      { id: 'build', label: 'O que eu construo' },
-      { id: 'cases', label: 'Cases' },
+      { id: 'impact', label: 'Resultados' },
       { id: 'projects', label: 'Projetos' },
       { id: 'experience', label: 'Experiência' },
       { id: 'about', label: 'Sobre' },
@@ -30,12 +28,12 @@ export const ptBR = {
   },
   hero: {
     eyebrow: 'PYTHON SOFTWARE ENGINEER · FULL-STACK & IA',
-    title: 'Do problema ambíguo ao software em produção.',
+    title: 'Transformo problemas de negócio em software pronto para uso.',
     intro:
-      'Sou Guilherme Ramires, engenheiro de software com mais de 5 anos de experiência construindo APIs, aplicações, automações e integrações de inteligência artificial. Transformo necessidades de negócio em software testado, implantável e preparado para uso real.',
+      'Sou Guilherme Ramires, engenheiro de software Python com mais de 5 anos em APIs, produtos web, automação e IA aplicada.',
     reinforcement:
-      'Arquitetura, código, testes e entrega — sem parar no protótipo.',
-    primaryCta: 'Conheça meu trabalho',
+      'Entendo o contexto, construo a solução e levo até produção.',
+    primaryCta: 'Conversar sobre uma oportunidade',
     secondaryCta: 'Baixar currículo (EN)',
     availability:
       'Disponível para oportunidades remotas · Florianópolis, Brasil · UTC-3',
@@ -44,84 +42,65 @@ export const ptBR = {
   },
   metrics: {
     eyebrow: '01 / IMPACT',
-    title: 'Resultado antes de adjetivo.',
+    title: 'Resultados que chegaram ao negócio.',
     intro:
-      'Meu trabalho não termina quando o código executa. Ele precisa reduzir atrito, ampliar capacidade e continuar confiável quando chega à produção.',
+      'Uma seleção do impacto que gerei em produto, receita e operação.',
     items: [
       {
         value: '5+ anos',
         company: 'Trajetória profissional',
-        context: 'construindo sistemas e serviços com Python',
+        context: 'entregando software Python em produtos e operações reais',
       },
       {
         value: '+40%',
         company: 'Spinver',
-        context:
-          'de aumento no sucesso de contato com leads após integrar dados de pessoas à extração de telefones',
-      },
-      {
-        value: '98%',
-        company: 'Spinver',
-        context:
-          'de precisão ao extrair telefones brasileiros de textos não estruturados, antes da popularização da IA generativa',
+        context: 'mais sucesso no contato com leads após integrar dados e extração de telefones',
       },
       {
         value: '35% → 71%',
         company: 'DOJO — Smart Ways',
-        context:
-          'de assertividade entre a primeira POC e a entrega de uma análise de roupas com LLM após a adoção de RAG',
+        context: 'de assertividade na análise de roupas após evoluir a POC com RAG',
       },
       {
         value: '4h/semana',
         company: 'QuintoAndar',
-        context:
-          'economizadas, em média, por automações criadas para diferentes times',
-      },
-      {
-        value: '2 horas',
-        company: 'Softplan',
-        context:
-          'economizadas para a equipe de Design com geração automática de relatórios usando LLM',
+        context: 'poupadas, em média, por automações criadas para diferentes times',
       },
     ],
     companyStrip:
-      'Experiência construída em times da Delfos, Softplan, DOJO, QuintoAndar e Spinver.',
+      'Experiência em times da Delfos, Softplan, DOJO, QuintoAndar e Spinver.',
   },
   capabilities: {
     eyebrow: '02 / MODULES',
-    title: 'Software que resolve o problema inteiro.',
+    title: 'Posso entrar no problema e sair com a entrega.',
     intro:
-      'Da regra de negócio à interface, da integração à implantação: combino engenharia de backend, visão de produto e inteligência artificial para transformar processos complexos em sistemas utilizáveis.',
+      'Atuo onde backend, produto e automação precisam funcionar juntos.',
     items: [
       {
         key: 'full-stack',
         category: 'Full-Stack Development',
-        title: 'Produtos completos, não peças isoladas.',
+        title: 'Do backend à experiência publicada.',
         description:
-          'Construo e mantenho aplicações Python, interfaces web, ferramentas internas e integrações entre sistemas. Penso no fluxo completo: dados, regras de negócio, experiência do usuário, operação e manutenção.',
+          'Levo produtos web do fluxo e das regras de negócio até a interface, publicação e manutenção.',
         technologies: [
           'Python',
           'Django',
-          'Flask',
           'HTML',
           'CSS',
           'JavaScript',
-          'Bootstrap',
           'PostgreSQL',
-          'MongoDB',
+          'Docker',
         ],
       },
       {
         key: 'backend',
         category: 'Backend & APIs',
-        title: 'A base precisa aguentar o produto.',
+        title: 'APIs e serviços que sustentam o produto.',
         description:
-          'Desenvolvo APIs REST, serviços internos, integrações e processamento em segundo plano com foco em clareza, testes e confiabilidade. Também atuo na manutenção e modernização de sistemas legados sem interromper a operação.',
+          'Construo e modernizo serviços Python, integrações e fluxos de dados com testes, confiabilidade e manutenção em mente.',
         technologies: [
           'Python',
           'FastAPI',
-          'Django',
-          'Flask',
           'Pydantic',
           'PostgreSQL',
           'Redis',
@@ -132,44 +111,26 @@ export const ptBR = {
       {
         key: 'ai',
         category: 'AI Engineering',
-        title: 'IA conectada ao produto, não presa na demonstração.',
+        title: 'IA aplicada a trabalho real.',
         description:
-          'Integro LLMs e modelos de IA aplicados a imagens a sistemas reais por meio de APIs, componentes reutilizáveis e fluxos automatizados. Minha experiência inclui recomendações, chatbots, extração estruturada de atributos e pipelines com OpenAI e Vertex AI.',
+          'Integro LLMs, automações e modelos de imagem a sistemas reais: recomendações, relatórios, chatbots e extração estruturada.',
         technologies: [
           'OpenAI API',
           'Google Vertex AI',
           'FastAPI',
           'AWS Lambda',
-          'S3',
           'n8n',
           'Redis',
-          'Docker',
-        ],
-      },
-      {
-        key: 'automation',
-        category: 'Automation, Crawlers & ETL',
-        title: 'Onde há repetição e dados dispersos, há espaço para engenharia.',
-        description:
-          'Crio crawlers, pipelines e automações que capturam, organizam e disponibilizam dados para outras áreas e sistemas. Essa capacidade já ampliou cobertura comercial, reduziu trabalho manual e sustentou experimentos de receita.',
-        technologies: [
           'Scrapy',
-          'Redis',
-          'Pandas',
-          'Dagster',
-          'InfluxDB',
-          'SQL',
-          'NoSQL',
-          'APIs',
         ],
       },
     ],
   },
   cases: {
     eyebrow: '03 / CASES',
-    title: 'Problemas reais. Decisões técnicas. Impacto comprovável.',
+    title: 'Três problemas. Três resultados mensuráveis.',
     intro:
-      'Uma stack só importa quando resolve algo. Estes cases mostram como transformei necessidades operacionais e de produto em software entregável.',
+      'O contexto muda; meu papel é transformar a necessidade em uma entrega que funciona.',
     labels: {
       problem: 'Problema',
       solution: 'Construção',
@@ -181,22 +142,22 @@ export const ptBR = {
         company: 'Spinver',
         title: 'Mais contatos úteis a partir de dados difíceis de capturar.',
         problem:
-          'A aquisição de dados precisava alcançar mais fontes e transformar informações desestruturadas em contatos utilizáveis.',
+          'A operação comercial precisava transformar dados dispersos em contatos utilizáveis.',
         solution:
-          'Desenvolvi crawlers Python, agentes com Scrapy, fluxos apoiados por Redis e integrações com bancos SQL e NoSQL. Também integrei uma API de dados de pessoas e construí um sistema especializado em extrair telefones brasileiros de textos não estruturados.',
+          'Integrei uma API de dados de pessoas a crawlers Python e a um extrator de telefones para textos não estruturados.',
         impact:
-          'A combinação da API de dados de pessoas com a extração de telefones aumentou em 40% o sucesso de contato com leads. O sistema de extração alcançou 98% de precisão antes da popularização da IA generativa.',
+          'O sucesso de contato com leads cresceu 40%, e o extrator alcançou 98% de precisão.',
         stack: ['Python', 'Scrapy', 'Redis', 'SQL', 'NoSQL'],
       },
       {
         company: 'Softplan',
         title: 'Inteligência artificial integrada a produtos internos.',
         problem:
-          'Produtos internos precisavam consumir recursos de IA generativa com componentes reutilizáveis, desempenho consistente e um caminho confiável até a implantação.',
+          'Times internos precisavam usar IA generativa sem depender de protótipos isolados.',
         solution:
-          'Desenvolvi APIs Python conectando sistemas de negócio a pipelines de LLM. Também construí um serviço de recomendação com FastAPI, cache Redis, múltiplas estratégias, Docker e testes automatizados, além de workflows com n8n e OpenAI. Para a equipe de Design, implementei um sistema que combinava automação e LLM para gerar relatórios automaticamente.',
+          'Criei APIs Python, um serviço de recomendação com FastAPI e Redis e automações com n8n e OpenAI.',
         impact:
-          'O sistema de relatórios economizou 2 horas de trabalho da equipe de Design. As demais entregas melhoraram o desempenho do serviço de recomendações e encurtaram os ciclos de prototipação de chatbots implantáveis por Rancher e GitLab CI/CD.',
+          'A geração automática de relatórios poupou 2 horas da equipe de Design e os componentes reutilizáveis aceleraram novas soluções com LLM.',
         stack: [
           'Python',
           'FastAPI',
@@ -212,11 +173,11 @@ export const ptBR = {
         company: 'DOJO — Smart Ways',
         title: 'De imagens de roupas a atributos prontos para outros sistemas.',
         problem:
-          'Um produto de análise de roupas precisava transformar informações presentes em imagens em atributos estruturados com assertividade suficiente para consumo por outros sistemas.',
+          'Um produto precisava transformar imagens de roupas em atributos estruturados para outros sistemas.',
         solution:
-          'Construí serviços Python em torno de AWS Lambda, S3 e Vertex AI, separando as responsabilidades de entrada, predição, validação e saída. Após a primeira POC, incorporei RAG ao fluxo com LLM para elevar a qualidade da análise. Os serviços foram expostos por APIs e componentes Dockerizados.',
+          'Estruturei serviços Python com Lambda, S3 e Vertex AI e evoluí a primeira POC com RAG.',
         impact:
-          'A primeira POC alcançou 35% de assertividade. Após a adoção de RAG, a entrega chegou a 71% — uma evolução de 36 pontos percentuais — e disponibilizou as predições para sistemas downstream.',
+          'A assertividade subiu de 35% para 71%, e as predições passaram a alimentar sistemas downstream.',
         stack: [
           'Python',
           'AWS Lambda',
@@ -227,61 +188,24 @@ export const ptBR = {
           'testes unitários',
         ],
       },
-      {
-        company: 'Delfos',
-        title: 'Dados operacionais conectados para ativos solares e eólicos.',
-        problem:
-          'Sistemas de energia renovável dependiam de pipelines e integrações capazes de processar dados operacionais vindos de fontes diferentes.',
-        solution:
-          'Construí e mantive pipelines Dagster, ferramentas Python e APIs conectando InfluxDB, PostgreSQL e serviços de processamento.',
-        impact:
-          'O trabalho reduziu a complexidade de integração e reforçou a confiabilidade dos serviços com testes unitários, componentes Dockerizados e pipelines de GitLab CI/CD.',
-        stack: [
-          'Python',
-          'Dagster',
-          'InfluxDB',
-          'PostgreSQL',
-          'Docker',
-          'GitLab CI/CD',
-        ],
-      },
-      {
-        company: 'QuintoAndar',
-        title: 'Engenharia para acelerar experimentos sem abandonar a operação.',
-        problem:
-          'Uma squad orientada a experimentação precisava colocar hipóteses de receita em prática enquanto mantinha serviços legados e fluxos operacionais funcionando.',
-        solution:
-          'Desenvolvi serviços Python, APIs internas, automações para diferentes times e pipelines ETL. Também construí endpoints e ferramentas internas, revisei código, escrevi testes e atuei na resolução de incidentes.',
-        impact:
-          'As automações economizaram, em média, 4 horas de trabalho por semana. As demais entregas aceleraram experimentos de receita e protegeram a continuidade dos serviços e bancos de dados existentes.',
-        stack: [
-          'Python',
-          'APIs internas',
-          'automação',
-          'ETL',
-          'testes',
-          'bancos de dados',
-        ],
-      },
     ],
   },
   projects: {
     eyebrow: '04 / SHIPPED',
-    title: 'Projetos que saíram do editor e chegaram às pessoas.',
+    title: 'Trabalho que você pode abrir e avaliar.',
     intro:
-      'Produtos publicados mostram minha capacidade de transformar uma necessidade em experiência utilizável. Os projetos open source abrem a engenharia por trás da entrega: arquitetura, integrações, testes e decisões de implementação.',
+      'Produtos publicados e repositórios selecionados mostram execução, não só repertório.',
     live: {
-      title: 'Produtos digitais publicados',
-      description:
-        'Sites e experiências que podem ser abertas, exploradas e avaliadas agora.',
+      title: 'Produtos em produção ou demonstração',
+      description: 'Abra, navegue e veja a entrega funcionando.',
       items: [
         {
           slug: 'donateka',
           tag: 'PRODUTO PUBLICADO',
           title: 'Donateka',
           description:
-            'Experiência digital publicada e preparada para apresentar a proposta do projeto com clareza em diferentes mercados.',
-          role: 'Desenvolvimento do site.',
+            'Site publicado para comunicar a proposta do produto em diferentes mercados.',
+          role: 'Desenvolvimento web.',
           cta: 'Acessar Donateka',
           url: 'https://donateka.com.br/pt',
           image: liveProjectAssets.donateka.png,
@@ -295,8 +219,8 @@ export const ptBR = {
           tag: 'PRODUTO PRÓPRIO',
           title: 'RamiresTech Digital Solutions',
           description:
-            'Site da minha operação de soluções digitais, criado para transformar serviços complexos em uma proposta clara, navegável e orientada à conversão.',
-          role: 'Estratégia, produto, copy, design e desenvolvimento.',
+            'Produto próprio que transforma serviços digitais complexos em uma proposta clara e orientada à conversão.',
+          role: 'Estratégia, produto, design e desenvolvimento.',
           cta: 'Conhecer a RamiresTech',
           url: 'https://ramirestech.com/',
           image: liveProjectAssets.ramirestech.png,
@@ -310,8 +234,8 @@ export const ptBR = {
           tag: 'PROJETO PARA CLIENTE',
           title: 'FJM Clean',
           description:
-            'Presença digital comercial para um negócio local de limpeza de estofados, estruturada para explicar os serviços e transformar interesse em contato pelo WhatsApp.',
-          role: 'Estratégia, copy, design e desenvolvimento.',
+            'Site comercial que apresenta serviços e direciona clientes para contato pelo WhatsApp.',
+          role: 'Estratégia, design e desenvolvimento.',
           cta: 'Acessar FJM Clean',
           url: 'https://fjmclean.com.br/',
           image: liveProjectAssets.fjmClean.png,
@@ -325,8 +249,8 @@ export const ptBR = {
           tag: 'MINI E-COMMERCE',
           title: 'Mercadinho Delivery',
           description:
-            'Protótipo funcional de mini e-commerce que organiza um catálogo de mercado em uma experiência simples de descoberta e pedido.',
-          role: 'Produto, experiência, interface e desenvolvimento.',
+            'Mini e-commerce funcional para descoberta de produtos e montagem de pedidos.',
+          role: 'Produto, interface e desenvolvimento.',
           status: 'Protótipo funcional',
           cta: 'Explorar o protótipo',
           url: 'https://mercadinho-delivery.pages.dev/',
@@ -340,18 +264,18 @@ export const ptBR = {
       ],
     },
     source: {
-      title: 'Veja como eu construo.',
+      title: 'Código que sustenta a conversa.',
       description:
-        'Repositórios selecionados pela qualidade da prova técnica e pelo alinhamento com Python, Full-Stack e IA — não apenas por estarem públicos.',
+        'Dois repositórios alinhados a Python, produto e IA aplicada.',
       items: [
         {
           slug: 'llm-recommendation-api',
           tag: 'FULL-STACK + IA',
           title: 'Sistema de recomendação com LLM',
           description:
-            'Uma solução completa de recomendação que combina estratégias baseadas em histórico e preferências com geração de descrições por LLM. A aplicação reúne APIs FastAPI, interface React, cache Redis com fallback, Docker e testes automatizados.',
+            'Aplicação com FastAPI, React, Redis e LLM que combina estratégias de recomendação com descrições geradas.',
           proof:
-            'Strategy Pattern · cache com TTL de 72h · LLM real ou emulado · frontend e APIs executados com um único comando.',
+            'Estratégias intercambiáveis · cache · fallback · Docker · testes.',
           stack: [
             'Python',
             'FastAPI',
@@ -370,9 +294,9 @@ export const ptBR = {
           tag: 'PYTHON BACKEND',
           title: 'Crawler jurídico com API e cache',
           description:
-            'API Python que recebe um número de processo, seleciona o crawler compatível, extrai dados de primeiro e segundo grau e devolve uma resposta estruturada. Redis reduz consultas repetidas e Docker simplifica a execução local.',
+            'API que seleciona o crawler correto, extrai dados processuais e usa Redis para evitar consultas repetidas.',
           proof:
-            'Seleção de crawler por segmento judiciário · FastAPI · cache Redis · resposta tipada · testes unitários.',
+            'FastAPI · resposta tipada · cache Redis · testes unitários.',
           stack: [
             'Python',
             'FastAPI',
@@ -396,7 +320,7 @@ export const ptBR = {
           tag: 'GAME DEVELOPMENT',
           title: 'Jogos, protótipos e game jams',
           description:
-            'Meu laboratório de interação e gameplay: jogos próprios e protótipos publicados que transformam regras, feedback visual e experiência do jogador em sistemas jogáveis.',
+            'Jogos e protótipos publicados onde exploro interação, regras e feedback visual.',
           cta: 'Jogar no itch.io',
           url: 'https://ramirestechgames.itch.io/',
           event: 'games_opened',
@@ -406,9 +330,9 @@ export const ptBR = {
   },
   experience: {
     eyebrow: '05 / HISTORY',
-    title: 'Cinco anos transformando contexto em entrega.',
+    title: 'Experiência que combina produto, dados e IA.',
     intro:
-      'Minha trajetória combina produtos digitais, sistemas internos, aquisição de dados, automação, inteligência artificial e infraestrutura de entrega.',
+      'Cinco empresas, diferentes contextos e a mesma responsabilidade: fazer a solução chegar ao uso real.',
     items: [
       {
         company: 'Delfos',
@@ -452,117 +376,26 @@ export const ptBR = {
       },
     ],
   },
-  technologies: {
-    eyebrow: '06 / STACK',
-    title: 'Ferramentas mudam. Fundamentos sustentam a entrega.',
-    intro:
-      'Escolho tecnologias pelo problema, pelo contexto do time e pelo custo de manter a solução depois do lançamento.',
-    groups: [
-      {
-        title: 'Backend',
-        items: [
-          'Python',
-          'FastAPI',
-          'Django',
-          'Flask',
-          'Pydantic',
-          'REST APIs',
-          'integrações de serviços',
-          'processamento em segundo plano',
-        ],
-      },
-      {
-        title: 'Frontend',
-        items: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-      },
-      {
-        title: 'Bancos e dados',
-        items: [
-          'PostgreSQL',
-          'MariaDB',
-          'MongoDB',
-          'Redis',
-          'InfluxDB',
-          'SQL',
-          'Pandas',
-          'ETL',
-          'Dagster',
-        ],
-      },
-      {
-        title: 'Inteligência artificial e automação',
-        items: [
-          'OpenAI API',
-          'Google Vertex AI',
-          'integrações com LLMs',
-          'n8n',
-        ],
-      },
-      {
-        title: 'Cloud e entrega',
-        items: [
-          'AWS Lambda',
-          'Amazon S3',
-          'GCP',
-          'Docker',
-          'Rancher',
-          'GitLab CI/CD',
-          'Git',
-        ],
-      },
-      {
-        title: 'Qualidade e colaboração',
-        items: [
-          'pytest',
-          'testes unitários',
-          'code review',
-          'debugging',
-          'clean code',
-          'modernização de legados',
-          'desenvolvimento ágil',
-        ],
-      },
-    ],
-  },
-  process: {
-    eyebrow: '07 / PROCESS',
-    title: 'Clareza para decidir. Engenharia para entregar.',
-    steps: [
-      {
-        title: 'Entender o problema real',
-        description:
-          'Traduzo necessidades pouco definidas em requisitos, riscos, fluxos e critérios de sucesso compreensíveis.',
-      },
-      {
-        title: 'Projetar o caminho mais simples que se sustenta',
-        description:
-          'Defino responsabilidades, contratos e integrações antes de acumular complexidade desnecessária.',
-      },
-      {
-        title: 'Construir com feedback curto',
-        description:
-          'Entrego partes utilizáveis, valido decisões cedo e ajusto a implementação com base no comportamento real do sistema.',
-      },
-      {
-        title: 'Testar o que não pode quebrar',
-        description:
-          'Uso testes unitários, revisão de código e debugging para reduzir regressões e aumentar a confiança de release.',
-      },
-      {
-        title: 'Preparar para operar',
-        description:
-          'Docker, CI/CD e documentação fazem parte da entrega. Software só está pronto quando o time consegue executar, observar e manter.',
-      },
-    ],
-    ready: 'ready_to_ship',
+  conversionCtas: {
+    impact: {
+      text: 'Busca alguém que conecte produto, backend e IA sem parar no protótipo?',
+      label: 'Conversar sobre uma oportunidade',
+    },
+    projects: {
+      text: 'Quer esse nível de execução no seu time ou produto?',
+      label: 'Falar sobre uma vaga',
+    },
+    experience: {
+      text: 'Minha experiência parece compatível com o seu desafio?',
+      label: 'Checar compatibilidade',
+    },
   },
   about: {
-    eyebrow: '08 / README',
-    title: 'Engenharia com visão de produto.',
+    eyebrow: '06 / README',
+    title: 'Engenheiro por profissão. Construtor por natureza.',
     paragraphs: [
-      'Meu trabalho começa onde processos manuais, integrações frágeis e ideias ainda pouco definidas deixam de escalar. Gosto de decompor problemas, conectar as partes certas e transformar incerteza em software confiável.',
-      'Ao longo de mais de cinco anos, atuei com aplicações Python, APIs, automação, aquisição de dados, sistemas internos, inteligência artificial e modernização de legados. Isso me ensinou a equilibrar velocidade de entrega com a responsabilidade de manter o que já está em produção.',
-      'Também curso Jogos Digitais. Games são meu laboratório criativo: um espaço onde engenharia, interação e experiência do usuário precisam funcionar juntas.',
+      'Gosto de pegar problemas ainda pouco definidos, encontrar o fluxo essencial e transformá-los em software que outras pessoas conseguem usar e manter.',
+      'Fora do trabalho, curso Jogos Digitais. Games são meu laboratório para explorar sistemas, interação e experiência do usuário.',
     ],
     facts: [
       'Florianópolis, SC, Brasil',
@@ -573,10 +406,10 @@ export const ptBR = {
     ],
   },
   contact: {
-    eyebrow: '09 / CONNECT',
-    title: 'Tem um problema que precisa virar software?',
+    eyebrow: '07 / CONNECT',
+    title: 'Vamos falar sobre a próxima oportunidade?',
     intro:
-      'Se você procura alguém capaz de conectar negócio, engenharia e IA para entregar soluções utilizáveis, vamos conversar. Estou aberto a oportunidades remotas e projetos compatíveis com minha experiência.',
+      'Estou aberto a entrevistas para posições remotas em engenharia Python, backend, full-stack e IA aplicada — especialmente onde produto e execução precisam andar juntos.',
     primaryCta: 'Enviar uma mensagem',
     linkedinCta: 'Falar pelo LinkedIn',
     emailCta: 'Enviar e-mail diretamente',

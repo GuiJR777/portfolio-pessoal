@@ -36,7 +36,7 @@ describe('application shell', () => {
     expect(
       screen.getByRole('heading', {
         level: 1,
-        name: 'From ambiguous problems to production software.',
+        name: 'I turn business problems into software ready for real use.',
       }),
     ).toBeInTheDocument();
     expect(screen.getAllByRole('heading', { level: 1 })).toHaveLength(1);
@@ -70,7 +70,7 @@ describe('application shell', () => {
     expect(
       screen.getByRole('heading', {
         level: 1,
-        name: 'From ambiguous problems to production software.',
+        name: 'I turn business problems into software ready for real use.',
       }),
     ).toBeInTheDocument();
   });

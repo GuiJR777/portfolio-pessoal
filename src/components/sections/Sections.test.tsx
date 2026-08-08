@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, expect, it, vi } from 'vitest';
 
@@ -19,8 +19,6 @@ describe('portfolio sections', () => {
       ptBR.cases.title,
       ptBR.projects.title,
       ptBR.experience.title,
-      ptBR.technologies.title,
-      ptBR.process.title,
       ptBR.about.title,
       ptBR.contact.title,
     ];
@@ -29,16 +27,40 @@ describe('portfolio sections', () => {
       expect(screen.getByRole('heading', { name: heading })).toBeInTheDocument();
     }
 
-    expect(screen.getAllByTestId('metric')).toHaveLength(6);
-    expect(screen.getAllByTestId('professional-case')).toHaveLength(5);
+    expect(screen.getAllByTestId('metric')).toHaveLength(4);
+    expect(screen.getAllByTestId('professional-case')).toHaveLength(3);
     expect(screen.getAllByTestId('experience-item')).toHaveLength(5);
-    expect(screen.getAllByTestId('process-step')).toHaveLength(5);
+    expect(document.querySelectorAll('main a[href="#contact"]')).toHaveLength(4);
+  });
+
+  it('routes hiring CTAs to the form and records their source', async () => {
+    const user = userEvent.setup();
+    const analytics = vi.fn();
+    window.portfolioAnalytics = analytics;
+    window.history.replaceState({}, '', '/pt');
+    window.sessionStorage.setItem(introSessionKey, 'seen');
+    render(<App />);
+
+    const impactSection = document.querySelector<HTMLElement>('#impact');
+    expect(impactSection).not.toBeNull();
+    if (!impactSection) throw new Error('Impact section not found');
+
+    const impactCta = within(impactSection).getByRole('link', {
+      name: 'Conversar sobre uma oportunidade',
+    });
+    expect(impactCta).toHaveAttribute('href', '#contact');
+
+    await user.click(impactCta);
+    expect(analytics).toHaveBeenCalledWith('contact_cta_clicked', {
+      locale: 'pt-BR',
+      cta_source: 'impact',
+    });
   });
 });
 
 describe('published products carousel', () => {
   it('uses secure external links that announce the new tab', () => {
-    render(<ProjectsSection content={ptBR.projects} a11y={ptBR.a11y} locale="pt-BR" />);
+    render(<ProjectsSection content={ptBR.projects} a11y={ptBR.a11y} locale="pt-BR" cta={ptBR.conversionCtas.projects} />);
 
     const donateka = screen.getByRole('link', {
       name: /Acessar Donateka.*abre em nova aba/i,
@@ -52,7 +74,9 @@ describe('published products carousel', () => {
       '(max-width: 640px) 84vw, (max-width: 1280px) 51vw, 819px',
     );
 
-    const externalLinks = screen.getAllByRole('link');
+    const externalLinks = screen
+      .getAllByRole('link')
+      .filter((link) => link.getAttribute('href')?.startsWith('https://'));
     for (const link of externalLinks) {
       expect(link).toHaveAttribute('target', '_blank');
       expect(link).toHaveAttribute('rel', 'noopener noreferrer');
@@ -61,7 +85,7 @@ describe('published products carousel', () => {
 
   it('keeps arrows and pagination synchronized without autoplay', async () => {
     const user = userEvent.setup();
-    render(<ProjectsSection content={ptBR.projects} a11y={ptBR.a11y} locale="pt-BR" />);
+    render(<ProjectsSection content={ptBR.projects} a11y={ptBR.a11y} locale="pt-BR" cta={ptBR.conversionCtas.projects} />);
 
     const carousel = screen.getByRole('region', { name: ptBR.a11y.carouselLabel });
     const track = carousel.querySelector<HTMLElement>('.carousel__track');

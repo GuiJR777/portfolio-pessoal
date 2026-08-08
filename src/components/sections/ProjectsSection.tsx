@@ -1,10 +1,11 @@
 import { ArrowLeft, ArrowRight, Boxes, Gamepad2 } from 'lucide-react';
 import { useRef, useState, type KeyboardEvent } from 'react';
 
-import type { AccessibilityContent, ProjectLink, ProjectsContent } from '../../content/types';
+import type { AccessibilityContent, ConversionCtaContent, ProjectLink, ProjectsContent } from '../../content/types';
 import type { Locale } from '../../lib/locale';
 import { FocusImage } from '../ui/FocusImage';
 import { ExternalLink } from '../ui/ExternalLink';
+import { ConversionCta } from '../ui/ConversionCta';
 import { SectionReveal } from '../motion/SectionReveal';
 
 function LiveProjectCard({ item, active, a11y, locale }: { item: ProjectLink; active: boolean; a11y: AccessibilityContent; locale: Locale }) {
@@ -35,7 +36,7 @@ function SourceDiagram({ crawler = false }: { crawler?: boolean }) {
   );
 }
 
-export function ProjectsSection({ content, a11y, locale }: { content: ProjectsContent; a11y: AccessibilityContent; locale: Locale }) {
+export function ProjectsSection({ content, a11y, locale, cta }: { content: ProjectsContent; a11y: AccessibilityContent; locale: Locale; cta: ConversionCtaContent }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const trackRef = useRef<HTMLDivElement>(null);
 
@@ -98,6 +99,7 @@ export function ProjectsSection({ content, a11y, locale }: { content: ProjectsCo
         <Gamepad2 aria-hidden="true" /><div><span className="project-tag">{content.creative.items[0].tag}</span><h3>{content.creative.items[0].title}</h3><p>{content.creative.items[0].description}</p></div>
         <ExternalLink className="button button--light" href={content.creative.items[0].url} label={content.creative.items[0].cta} newTabLabel={a11y.newTab} event="games_opened" locale={locale} projectSlug={content.creative.items[0].slug}>{content.creative.items[0].cta}</ExternalLink>
       </div>
+      <ConversionCta content={cta} locale={locale} source="projects" />
     </SectionReveal>
   );
 }

@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 
 const steps = [
   ['home', 'BOOT'], ['impact', 'IMPACT'], ['build', 'MODULES'], ['cases', 'CASES'],
-  ['projects', 'SHIPPED'], ['experience', 'HISTORY'], ['stack', 'STACK'],
-  ['process', 'PROCESS'], ['about', 'README'], ['contact', 'CONNECT'],
+  ['projects', 'SHIPPED'], ['experience', 'HISTORY'], ['about', 'README'],
+  ['contact', 'CONNECT'],
 ] as const;
 
 export function BuildRail() {

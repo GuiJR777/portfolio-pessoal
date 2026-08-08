@@ -13,9 +13,7 @@ import { CasesSection } from '../components/sections/CasesSection';
 import { ContactSection } from '../components/sections/ContactSection';
 import { ExperienceSection } from '../components/sections/ExperienceSection';
 import { MetricsSection } from '../components/sections/MetricsSection';
-import { ProcessSection } from '../components/sections/ProcessSection';
 import { ProjectsSection } from '../components/sections/ProjectsSection';
-import { TechnologiesSection } from '../components/sections/TechnologiesSection';
 import {
   getBrowserLocale,
   setBrowserLocale,
@@ -49,13 +47,11 @@ export function App() {
       <Header content={content} locale={locale} onLocaleChange={changeLocale} />
       <main id="main-content" tabIndex={-1}>
         <Hero content={content.hero} locale={locale} />
-        <MetricsSection content={content.metrics} />
+        <MetricsSection content={content.metrics} cta={content.conversionCtas.impact} locale={locale} />
         <CapabilitiesSection content={content.capabilities} />
         <CasesSection content={content.cases} />
-        <ProjectsSection content={content.projects} a11y={content.a11y} locale={locale} />
-        <ExperienceSection content={content.experience} />
-        <TechnologiesSection content={content.technologies} />
-        <ProcessSection content={content.process} />
+        <ProjectsSection content={content.projects} a11y={content.a11y} locale={locale} cta={content.conversionCtas.projects} />
+        <ExperienceSection content={content.experience} cta={content.conversionCtas.experience} locale={locale} />
         <AboutSection content={content.about} />
         <ContactSection content={content.contact} newTabLabel={content.a11y.newTab} locale={locale} />
       </main>

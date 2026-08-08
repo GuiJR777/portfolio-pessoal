@@ -8,8 +8,6 @@ export type SectionId =
   | 'cases'
   | 'projects'
   | 'experience'
-  | 'stack'
-  | 'process'
   | 'about'
   | 'contact';
 
@@ -103,7 +101,21 @@ export type AnalyticsEvent =
   | 'repository_opened'
   | 'games_opened'
   | 'contact_submitted'
+  | 'contact_cta_clicked'
   | 'language_changed';
+
+export type CtaSource = 'hero' | 'impact' | 'projects' | 'experience';
+
+export interface ConversionCtaContent {
+  text: string;
+  label: string;
+}
+
+export interface ConversionCtasContent {
+  impact: ConversionCtaContent;
+  projects: ConversionCtaContent;
+  experience: ConversionCtaContent;
+}
 
 export interface ProjectLink {
   slug: string;
@@ -151,30 +163,6 @@ export interface ExperienceContent {
   title: string;
   intro: string;
   items: ExperienceItem[];
-}
-
-export interface TechnologyGroup {
-  title: string;
-  items: string[];
-}
-
-export interface TechnologiesContent {
-  eyebrow: string;
-  title: string;
-  intro: string;
-  groups: TechnologyGroup[];
-}
-
-export interface ProcessStep {
-  title: string;
-  description: string;
-}
-
-export interface ProcessContent {
-  eyebrow: string;
-  title: string;
-  steps: ProcessStep[];
-  ready: string;
 }
 
 export interface AboutContent {
@@ -255,8 +243,7 @@ export interface SiteContent {
   cases: CasesContent;
   projects: ProjectsContent;
   experience: ExperienceContent;
-  technologies: TechnologiesContent;
-  process: ProcessContent;
+  conversionCtas: ConversionCtasContent;
   about: AboutContent;
   contact: ContactContent;
   a11y: AccessibilityContent;

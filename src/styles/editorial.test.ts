@@ -53,4 +53,13 @@ describe('editorial layout contract', () => {
       /@media \(max-width: 767px\)[\s\S]*\.live-project\s*\{[^}]*display:\s*block[^}]*height:\s*auto/s,
     );
   });
+
+  it('uses compact responsive conversion bands instead of new full sections', () => {
+    expect(sectionStyles).toMatch(
+      /\.conversion-cta\s*\{[^}]*display:\s*grid[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)\s*auto[^}]*padding:\s*1\.25rem 0/s,
+    );
+    expect(sectionStyles).toMatch(
+      /@media \(max-width: 640px\)[\s\S]*\.conversion-cta\s*\{[^}]*grid-template-columns:\s*1fr/s,
+    );
+  });
 });

@@ -1,8 +1,8 @@
-import { Braces, Database, GitBranch, Sparkles } from 'lucide-react';
+import { Braces, Database, Sparkles } from 'lucide-react';
 import type { CapabilityContent } from '../../content/types';
 import { SectionReveal } from '../motion/SectionReveal';
 
-const icons = [Braces, Database, Sparkles, GitBranch];
+const icons = [Braces, Database, Sparkles];
 
 export function CapabilitiesSection({ content }: { content: CapabilityContent }) {
   return (

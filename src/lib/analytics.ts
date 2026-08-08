@@ -1,9 +1,10 @@
-import type { AnalyticsEvent } from '../content/types';
+import type { AnalyticsEvent, CtaSource } from '../content/types';
 import type { Locale } from './locale';
 
 interface AnalyticsPayload {
   locale: Locale;
   project_slug?: string;
+  cta_source?: CtaSource;
 }
 
 declare global {

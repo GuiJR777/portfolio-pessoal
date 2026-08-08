@@ -27,7 +27,7 @@ export function Hero({ content, locale }: HeroProps) {
           <p className="hero__intro">{content.intro}</p>
           <p className="hero__reinforcement">{content.reinforcement}</p>
           <div className="hero__actions">
-            <a className="button button--primary" href="#projects">
+            <a className="button button--primary" href="#contact" onClick={() => trackEvent('contact_cta_clicked', { locale, cta_source: 'hero' })}>
               {content.primaryCta}<ArrowDownRight size={18} aria-hidden="true" />
             </a>
             <a className="button button--secondary" href={profileLinks.resume} download onClick={() => trackEvent('resume_downloaded', { locale })}>
