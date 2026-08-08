@@ -3,5 +3,9 @@
   "name": "guilherme-ramires-portfolio",
   "pages_build_output_dir": "./dist",
   "compatibility_date": "2026-08-07",
-  "compatibility_flags": ["nodejs_compat"]
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    "CONTACT_TO_EMAIL": "guilhermejramires@gmail.com",
+    "CONTACT_FROM_EMAIL": "Portfolio <onboarding@resend.dev>"
+  }
 }
