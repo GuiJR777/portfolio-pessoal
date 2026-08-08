@@ -3,12 +3,5 @@
   "name": "guilherme-ramires-portfolio",
   "pages_build_output_dir": "./dist",
   "compatibility_date": "2026-08-07",
-  "compatibility_flags": ["nodejs_compat"],
-  "observability": {
-    "enabled": true,
-    "logs": {
-      "enabled": true,
-      "head_sampling_rate": 1
-    }
-  }
+  "compatibility_flags": ["nodejs_compat"]
 }
