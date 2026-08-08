@@ -1,0 +1,4 @@
+RESEND_API_KEY=
+CONTACT_TO_EMAIL=guilhermejramires@gmail.com
+# The resend.dev sender can only deliver to the email address associated with the Resend account.
+CONTACT_FROM_EMAIL=Portfolio <onboarding@resend.dev>
